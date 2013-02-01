@@ -1,0 +1,22 @@
+{
+  "debug": false,
+  "defaultLayout": "layout",
+  "defaultPort": null,
+  "defaultTemplate": "index",
+  "description": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
+  "hostName": null,
+  "lintScripts": false,
+  "optimiseImages": true,
+  "project": "front-end-conf",
+  "rootAssets": "public",
+  "rootIncludes": "views/includes",
+  "rootLayouts": "views/layouts",
+  "rootViews": "views",
+  "scriptOutput": "public/scripts",
+  "styleOutput": "public/styles",
+  "type": "mixture",
+  "urlid": null,
+  "useCompass": true,
+  "username": null,
+  "version": "1.0.0.0"
+}

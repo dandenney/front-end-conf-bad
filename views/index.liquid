@@ -1,0 +1,104 @@
+{% block content %}
+
+  <section class="stage">
+    <div class="curtain">
+      <img src="{{ "/images/characters/jason-vanlue.svg" | asset_url }}" alt="Jason VanLue" class="stage-character">
+      <p class="h3 stage-info">Chris <br />Coyier</p>
+      
+      <img src="{{ "/images/characters/darcy-clarke.svg" | asset_url }}" alt="Darcy Clarke" class="stage-character">
+      <p class="h3 stage-info">Doug <br />Neiner</p>
+      
+      <img src="{{ "/images/characters/gio-difeterici.svg" | asset_url }}" alt="Gio DiFeterici" class="stage-character">
+      <p class="h3 stage-info">Allison <br />Wagner</p>
+      
+      <img src="{{ "/images/characters/bermon-painter.svg" | asset_url }}" alt="Bermon Painter" class="stage-character">
+      <p class="h3 stage-info">Jenn <br />Lukas</p>
+      
+      <img src="{{ "/images/characters/carl-smith.svg" | asset_url }}" alt="Carl Smith" class="stage-character">
+      <p class="h3 stage-info">Michael <br />Parenteau</p>
+      
+      <img src="{{ "/images/characters/dave-rupert.svg" | asset_url }}" alt="Dave Rupert" class="stage-character">
+      <p class="h3 stage-info">Matt <br />Graham</p>
+      
+      <img src="{{ "/images/characters/sarah-parmenter.svg" | asset_url }}" alt="Sarah Parmenter" class="stage-character">
+      <p class="h3 stage-info">Cameron <br />Moll</p>
+    </div>
+  </section>
+
+  <section class="inner home">
+    
+    <div class="block-to-half">
+      <h2><span class="fit-03">June</span> <span class="fit-08">21st &amp; 22nd</span> <span class="fit-03">2013</span></h2>   
+    </div>
+
+    <div class="block-to-half florida">
+      <p class="h3">St. Petersburg, FL</p>
+      <img src="{{ "/images/florida.svg" | asset_url }}" alt="Map of Florida">
+    </div>
+
+    <h3 class="mission"><span class="fit-23">Front-End Conf is a few days of peer learning</span> <span class="fit-25">and celebrating how awesome our community is.</span></h3>
+
+    <div class="block-to-half counts">
+      <span class="block-to-half fit-009 h2">7</span> 
+      <span class="block-to-half fit-045 h3">Day One <br />Speakers</span>
+    </div>
+
+    <div class="block-to-half counts">
+      <span class="block-to-half fit-009 h2">?</span> 
+      <span class="block-to-half fit-045 h3">Day Two <br />Speakers</span>
+    </div>
+
+    <p class="h3 fit-11 workshop">1 Optional Workshop</p>
+
+    <div class="block-to-half tickets">
+
+      <p>
+        <span class="h2 fit-03">250</span>
+        <span class="h3 fit-09">Tickets</span>
+      </p>
+
+    </div>
+
+    <div class="block-to-half tickets">
+
+      <p>
+        <span class="h2 fit-03">225</span>
+        <span class="h3 fit-09">Remaining</span>
+      </p>
+
+    </div>
+
+  
+  </section>
+
+  <a href="/registration-info" class="btn">Registration Info</a>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  
+  {{ "/scripts/jquery.fittext.min.js" | asset_url | script_tag }}
+	
+  <script>
+    $(function() {
+      $("body").addClass("home");
+      $(".fit-03").fitText(0.3);
+      $(".fit-045").fitText(0.45);
+      $(".fit-06").fitText(0.6);
+      $(".fit-07").fitText(0.7);
+      $(".fit-08").fitText(0.8);
+      $(".fit-09").fitText(0.9);
+      $(".fit-009").fitText(0.09);
+      $(".fit-11").fitText(1.1);
+      $(".fit-23").fitText(2.3);
+      $(".fit-25").fitText(2.5);
+      $(".stage-character").click(function() {
+        $(".stage-character, .stage-info").removeClass('is--active');
+        $(this).addClass("is--active");
+        $(this).next("p").addClass("is--active");
+      });
+      $(".nav--trigger").click(function() {
+        $(".nav--toggle").toggleClass("is--active");
+      });
+    })
+  </script>
+
+{% endblock %}

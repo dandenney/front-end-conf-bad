@@ -1,0 +1,74 @@
+//-------------------------------------
+//  Modules
+//-------------------------------------
+
+// ----- Buttons ----- //
+
+.btn
+  +background-image(linear-gradient(#b51f24, darken(#b51f24, 10%)))
+  color: #fff
+  display: inline-block
+  font-size: 3em
+  border-radius: 0.5em
+  padding: 0.5em 1em
+  // temp
+  margin: 0.5em 0
+
+// ----- Video ----- //
+
+.video-wrapper
+  background: $color-feature
+  text-align: center
+  .inner
+    max-width: 900px
+    
+// ----- Block to Half ----- //
+
+.block-to-half
+  +respond-to(768px)
+    display: inline-block
+    vertical-align: top
+    width: 49%
+        
+// ----- Block to Third(s) ----- //
+
+.block-to-one-third
+  +respond-to(768px)
+    display: inline-block
+    vertical-align: top
+    width: 33%
+    
+.block-to-two-thirds
+  +respond-to(768px)
+    display: inline-block
+    vertical-align: top
+    width: 66%
+
+// ----- Block to Inline ----- //
+
+.block-to-inline
+  +respond-to(370px)
+    margin-top: 0.5em
+    li
+      display: inline-block
+      + li
+        margin-left: 2em
+        
+// ----- Grid Wrappers ----- //
+        
+.wrapper--thirds
+  .block-to-one-third
+    padding-left: 3em
+    &:first-child
+      padding: 0
+      
+.wrapper--halfs
+  .block-to-half
+    &:first-child
+      padding-right: 3em
+    &:last-child
+      padding-left: 3em
+  
+
+
+    

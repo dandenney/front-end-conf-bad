@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% block title %}Front-End Conf 2013{% endblock %}</title>
+  {{ "/styles/app.css" | asset_url | stylesheet_tag }}
+</head>
+<body>
+  
+  <nav class="nav--toggle">
+    <a href="/registration-info">Registration Info</a>
+    <a href="/">Home</a>
+    <a href="/registration-info">2012</a>
+    <a href="/registration-info">2011</a>
+    <a href="/registration-info">2010</a>
+  </nav>
+
+  <header>
+    <a href="/" class="logo">
+      Front-End <span>Design Conference</span>
+    </a>
+    <i aria-role="hidden" data-icon="&#x6d;" class="nav--toggle nav--trigger"></i> 
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    {% include "navigation" %}
+  </footer>
+</body>
+</html>

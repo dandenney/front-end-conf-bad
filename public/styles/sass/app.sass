@@ -1,0 +1,70 @@
+@import "compass"
+
+@import "settings"
+@import "reset"
+@import "base"
+@import "home"
+@import "past-events"
+@import "presentation"
+@import "nav"
+@import "registration"
+@import "modules"
+
+@import "inbox"
+
+//-------------------------------------
+//  Sections
+//-------------------------------------
+
+// ----- Header ----- //
+
+header,
+footer
+  @extend %group
+  background: $color-feature
+  padding: 1em
+  
+  i
+    cursor: pointer
+    color: scale-color($color-feature, $lightness: -30%)
+    float: right
+    font-size: 1.5em
+    margin-top: 0.25em
+    
+.logo
+  color: $color-highlight
+  cursor: pointer
+  float: left
+  font-family: $font-highlight
+  font-size: 24px
+  text-shadow: 0 1px 1px #fff
+  span
+    color: scale-color($color-feature, $lightness: -30%)
+    display: block
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 15px
+    margin-top: -.75em
+    text-transform: lowercase
+
+// ----- Footer ----- //
+    
+footer
+  margin-top: 2em
+  text-align: center
+  li
+    display: inline-block
+    + li
+      &:before
+        content: "-"
+        color: #bababa
+        margin: 0 0.5em
+  a
+    color: $color-highlight
+    
+// ----- Helpers ----- //
+
+.center-group
+  text-align: center
+  
+.coming-soon
+  +opacity(0.3)

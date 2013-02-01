@@ -1,0 +1,124 @@
+//-------------------------------------
+//  Home
+//-------------------------------------
+
+.home
+
+  header
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6)
+    position: relative
+    z-index: 1 // 1 is the highest number so far
+    +respond-to(1024px)
+      box-shadow: 0 1em 2em rgba(0, 0, 0, 0.4)
+
+  h1, 
+  h2,
+  h3,
+  .h1,
+  .h2,
+  .h3
+    border: none
+
+  h2,
+  .h2,
+  h3,
+  .h3,
+  p > span
+    line-height: 1.05
+
+  h2 > span,
+  h3 > span,
+  p > span
+    display: block
+    
+  h2 > .fit-08
+    color: $color-alt
+    
+  .fit-009 
+    margin: 0
+  
+  .fit-045
+    margin-top: 1em
+
+  .florida
+    .h3
+      position: relative
+      top: 5.5em
+    img
+      margin-top: -1.75em
+      
+  .mission
+    line-height: 1.3
+    margin: 1.5em 0 1.75em 0
+    text-align: center
+  
+  .workshop,
+  .tickets
+    text-align: center
+    
+  .tickets 
+    .h2
+      margin: 0.5em 0 0 0
+    .h3
+      margin: -0.5em 0 0 0
+  
+.curtain
+  background: url('../images/curtain.png')
+  background-size: 100% 100%
+  border-bottom: 5em solid #252525
+  height: 250px
+  position: relative
+  width: 100%
+  .stage-character
+    +transition(all 250ms linear)
+    bottom: -2.5em
+    left: 0
+    position: absolute
+    width: percentage(1/14)
+    z-index: 1 // 1 is the highest number
+    &:nth-child(3)
+      left: 7%
+    &:nth-child(5)
+      left: 14%
+    &:nth-child(7)
+      left: auto
+      right: 21%
+    &:nth-child(9)
+      left: auto
+      right: 13%
+    &:nth-child(11)
+      left: auto
+      right: 7%
+      &.is--active
+        right: 20%
+    &:nth-child(13)
+      left: auto
+      right: 0
+      &.is--active
+        right: 18%
+    &.is--active
+      bottom: -3em
+      width: 40%
+      z-index: 0 // Bringing back to base
+      &:nth-child(1)
+        left: 13%
+  .stage-info
+    color: #fff 
+    font-size: 0
+    left: 45%
+    position: absolute
+    text-align: center
+    top: 30%
+    &.is--active
+      +transition(font-size 250ms linear)
+      font-size: 96px
+      &:nth-child(8),
+      &:nth-child(10),
+      &:nth-child(12),
+      &:nth-child(14)
+        left: 22%
+  +respond-to(1024px)
+    height: 700px
+
+
+    
