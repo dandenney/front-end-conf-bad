@@ -2,6 +2,7 @@
 
   <section class="stage">
     <div class="curtain">
+      
       <img src="{{ "/images/characters/jason-vanlue.svg" | asset_url }}" alt="Jason VanLue" class="stage-character">
       <p class="h3 stage-info">Chris <br />Coyier</p>
       
@@ -22,6 +23,7 @@
       
       <img src="{{ "/images/characters/sarah-parmenter.svg" | asset_url }}" alt="Sarah Parmenter" class="stage-character">
       <p class="h3 stage-info">Cameron <br />Moll</p>
+    
     </div>
   </section>
 
@@ -71,34 +73,8 @@
   
   </section>
 
-  <a href="{{ "/registration-info" | link_page }}" class="btn">Registration Info</a>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  
-  {{ "/scripts/jquery.fittext.min.js" | asset_url | script_tag }}
-	
-  <script>
-    $(function() {
-      $("body").addClass("home");
-      $(".fit-03").fitText(0.3);
-      $(".fit-045").fitText(0.45);
-      $(".fit-06").fitText(0.6);
-      $(".fit-07").fitText(0.7);
-      $(".fit-08").fitText(0.8);
-      $(".fit-09").fitText(0.9);
-      $(".fit-009").fitText(0.09);
-      $(".fit-11").fitText(1.1);
-      $(".fit-23").fitText(2.3);
-      $(".fit-25").fitText(2.5);
-      $(".stage-character").click(function() {
-        $(".stage-character, .stage-info").removeClass('is--active');
-        $(this).addClass("is--active");
-        $(this).next("p").addClass("is--active");
-      });
-      $(".nav--trigger").click(function() {
-        $(".nav--toggle").toggleClass("is--active");
-      });
-    })
-  </script>
+  <div class="center-group">
+    <a href="{{ "/registration-info" | link_page }}" class="btn">Registration Info</a>
+  </div>
 
 {% endblock %}

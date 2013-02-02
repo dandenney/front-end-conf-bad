@@ -1,31 +1,38 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>{% block title %}Front-End Conf 2013{% endblock %}</title>
-  {{ "/styles/app.css" | asset_url | stylesheet_tag }}
-</head>
-<body>
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>{% block title %}Front-End Conf 2013{% endblock %}</title>
+      {{ "/styles/app.css" | asset_url | stylesheet_tag }}
+    </head>
+
+    <body class="{% if mixture.url == 'index' %}home{% elsif mixture.url == '2012' %}prev-2012{% elsif mixture.url == '2011' %}prev-2011{% elsif mixture.url == 'registration-info' %}registration{% endif %}">
+
+      <nav class="nav--toggle">
+        {% include "navigation" %}
+      </nav>
+
+      <header>
+        <a href="/" class="logo">
+          Front-End <span>Design Conference</span>
+        </a>
+        <i aria-role="hidden" data-icon="&#x6d;" class="nav--toggle nav--trigger"></i> 
+      </header>
+
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+
+      <footer>
+        {% include "navigation" %}
+      </footer>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      {{ "/scripts/jquery.fittext.min.js" | asset_url | script_tag }}
+      {{ "/scripts/app.js" | asset_url | script_tag }}
+
+    </body>
   
-  <nav class="nav--toggle">
-    {% include "navigation" %}
-  </nav>
-
-  <header>
-    <a href="/" class="logo">
-      Front-End <span>Design Conference</span>
-    </a>
-    <i aria-role="hidden" data-icon="&#x6d;" class="nav--toggle nav--trigger"></i> 
-  </header>
-
-  <main>
-    {% block content %}{% endblock %}
-  </main>
-
-  <footer>
-    {% include "navigation" %}
-  </footer>
-
-</body>
-</html>
+  </html>

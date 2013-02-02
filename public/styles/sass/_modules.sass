@@ -5,14 +5,31 @@
 // ----- Buttons ----- //
 
 .btn
-  +background-image(linear-gradient(#b51f24, darken(#b51f24, 10%)))
-  color: #fff
+  -webkit-appearance: none
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  background-color: $color-highlight
+  border: 1px solid darken($color-highlight, 10%)
+  border-radius: 10px  
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 4px 0 darken($color-highlight, 10%)
+  color: white
+  cursor: pointer
   display: inline-block
-  font-size: 3em
-  border-radius: 0.5em
-  padding: 0.5em 1em
-  // temp
-  margin: 0.5em 0
+  font-family: $font-highlight
+  font-size: 1.5em
+  line-height: 1
+  padding: 0.9em 1.5em 0.75em
+  text-align: center
+  text-decoration: none
+  text-shadow: -1px -1px 0 darken($color-highlight, 10%)
+  &:hover
+    background: darken($color-highlight, 4%)
+    color: #fff
+  &:active
+    background: darken($color-highlight, 4%)
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 0 darken($color-highlight, 10%)
+    position: relative
+    top: 2px
+    
 
 // ----- Video ----- //
 
@@ -54,13 +71,18 @@
       + li
         margin-left: 2em
         
+// ----- Block to Inline ----- //
+
+.center-to-left
+  text-align: center
+  +respond-to(768px)
+    text-align: left
+        
 // ----- Grid Wrappers ----- //
         
 .wrapper--thirds
   .block-to-one-third
-    padding-left: 3em
-    &:first-child
-      padding: 0
+    width: 30%
       
 .wrapper--halfs
   .block-to-half
