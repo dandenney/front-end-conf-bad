@@ -55,7 +55,7 @@ $font-highlight: 'ChunkFive', 'ChunkFiveFF', Georgia, sans-serif
   
 // Sprites
 
-$sponsors: sprite-map("sponsors/*.png")
+$sponsors: sprite-map("sponsors/*.png", $spacing: 20px)
 
 @each $logo in sprite_names($sponsors)
   .logo-#{$logo}

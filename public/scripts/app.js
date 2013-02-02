@@ -31,7 +31,8 @@
   jQuery(function($) {
     FE.fit();
     FE.swap();
-    return FE.navToggle();
+    FE.navToggle();
+    return $(".video-wrapper").fitVids();
   });
 
 }).call(this);

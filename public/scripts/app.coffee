@@ -44,4 +44,5 @@ jQuery ($) ->
   FE.fit()
   FE.swap()
   FE.navToggle()
+  $(".video-wrapper").fitVids()
 
