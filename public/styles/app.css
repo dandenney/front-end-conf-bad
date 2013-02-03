@@ -1293,16 +1293,28 @@ h3.schedule {
   }
 }
 
-/* line 84, sass/_modules.sass */
-.wrapper--thirds .block-to-one-third {
-  width: 30%;
+@media (min-width: 768px) {
+  /* line 85, sass/_modules.sass */
+  .wrapper--thirds .block-to-one-third {
+    width: 30%;
+  }
+  /* line 87, sass/_modules.sass */
+  .wrapper--thirds .block-to-one-third + .block-to-one-third {
+    margin-left: 2%;
+  }
+}
+@media (min-width: 768px) and (min-width: 855px) {
+  /* line 90, sass/_modules.sass */
+  .wrapper--thirds .block-to-one-third + .block-to-one-third {
+    margin-left: 4.5%;
+  }
 }
 
-/* line 89, sass/_modules.sass */
+/* line 95, sass/_modules.sass */
 .wrapper--halfs .block-to-half:first-child {
   padding-right: 3em;
 }
-/* line 91, sass/_modules.sass */
+/* line 97, sass/_modules.sass */
 .wrapper--halfs .block-to-half:last-child {
   padding-left: 3em;
 }

@@ -81,8 +81,14 @@
 // ----- Grid Wrappers ----- //
         
 .wrapper--thirds
-  .block-to-one-third
-    width: 30%
+  +respond-to(768px)
+    .block-to-one-third
+      width: 30%
+      + .block-to-one-third
+        margin-left: 2%
+      +respond-to(855px)
+        + .block-to-one-third
+          margin-left: 4.5%
       
 .wrapper--halfs
   .block-to-half
