@@ -81,22 +81,30 @@
 // ----- Grid Wrappers ----- //
         
 .wrapper--thirds
+  .block-to-one-third + .block-to-one-third
+    margin-top: 2em
   +respond-to(768px)
     .block-to-one-third
       width: 30%
       + .block-to-one-third
-        margin-left: 2%
+        margin: 0 0 0 2%
       +respond-to(855px)
         + .block-to-one-third
           margin-left: 4.5%
       
 .wrapper--halfs
   .block-to-half
-    &:first-child
-      padding-right: 3em
     &:last-child
-      padding-left: 3em
+      margin-top: 2em
+  +respond-to(768px)
+    .block-to-half
+      &:first-child
+        padding-right: 3em
+      &:last-child
+        margin-top: 0
+        padding-left: 3em
   
-
+.space-top
+  margin-top: 1em
 
     

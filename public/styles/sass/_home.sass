@@ -5,11 +5,11 @@
 .home
 
   header
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6)
+    // box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6)
     position: relative
     z-index: 1 // 1 is the highest number so far
     +respond-to(1024px)
-      box-shadow: 0 1em 2em rgba(0, 0, 0, 0.4)
+      // box-shadow: 0 1em 2em rgba(0, 0, 0, 0.4)
 
   h1, 
   h2,
@@ -44,6 +44,10 @@
     .h3
       position: relative
       top: 5.5em
+      +respond-to(1024px)
+        top: 3.5em
+      +respond-to(1250px)
+        top: 4.5em
     img
       margin-top: -1.75em
       
