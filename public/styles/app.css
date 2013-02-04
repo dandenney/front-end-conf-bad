@@ -1229,6 +1229,32 @@ ol.schedule + .h4 {
   margin-bottom: 1em;
 }
 
+/* line 68, sass/_registration.sass */
+.places a {
+  display: block;
+}
+/* line 70, sass/_registration.sass */
+.places li {
+  display: inline-block;
+  margin: 1em 0 1em;
+  vertical-align: top;
+}
+@media (min-width: 768px) {
+  /* line 70, sass/_registration.sass */
+  .places li {
+    width: 30%;
+  }
+  /* line 76, sass/_registration.sass */
+  .places li:nth-child(3n+2), .places li:nth-child(3n+3) {
+    margin-left: 4%;
+  }
+}
+
+/* line 82, sass/_registration.sass */
+.day-two h4 {
+  margin-top: 1em;
+}
+
 /* line 7, sass/_modules.sass */
 .btn {
   -webkit-appearance: none;
