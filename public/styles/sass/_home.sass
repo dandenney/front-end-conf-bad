@@ -5,11 +5,12 @@
 .home
 
   header
-    // box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6)
+    border-bottom: 1px solid #fff
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.4)
     position: relative
     z-index: 1 // 1 is the highest number so far
     +respond-to(1024px)
-      // box-shadow: 0 1em 2em rgba(0, 0, 0, 0.4)
+      box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2)
 
   h1, 
   h2,
@@ -71,13 +72,12 @@
     
 // ----- Curtain ----- //
   
-.curtain
-  background: url('../images/curtain.png')
-  background-size: 100% 100%
-  border-bottom: 5em solid #252525
-  height: 250px
+.stage
   position: relative
   width: 100%
+  .bg-stage
+    display: block
+    width: 100%
   .stage-character
     +transition(all 250ms linear)
     bottom: -2.5em
@@ -126,7 +126,5 @@
       &:nth-child(12),
       &:nth-child(14)
         left: 22%
-  +respond-to(1024px)
-    height: 700px
 
     

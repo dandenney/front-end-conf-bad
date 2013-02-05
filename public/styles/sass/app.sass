@@ -22,7 +22,16 @@ header,
 footer
   @extend %group
   background: $color-feature
-  padding: 1em
+  padding: 0.5em 1em
+  
+header
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
+  +respond-to(768px)
+    position: static
   
   i
     cursor: pointer
@@ -69,6 +78,19 @@ footer
   
 .coming-soon
   +opacity(0.3)
+
+.temp
+  color: #fff
+  display: block
+  font-family: $font-highlight
+  left: 0
+  line-height: 1
+  margin: 0.5em auto 0 auto !important
+  padding: 0 20%
+  position: absolute
+  text-align: center
+  top: 0
+  width: 100%
 
 .sub-title
   text-align: center
