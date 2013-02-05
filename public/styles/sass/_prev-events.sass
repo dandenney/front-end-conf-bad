@@ -97,14 +97,20 @@
 
 .past-2012
   margin-top: 3em
-  .block-to-half
-    &:first-child
-      padding-right: 4em
-    &:last-child
-      padding-left: 4em
   img
     height: 180px
-    margin: 2em auto      
+    margin: 2em auto   
+  +respond-to(768px)
+    h3
+      font-size: 1.75em
+    .block-to-half
+      &:first-child
+        padding-right: 4em
+      &:last-child
+        padding-left: 4em  
+  +respond-to(1024px)
+    h3
+      font-size: 2em 
   +respond-to(1200px)
     img
       height: 465px
