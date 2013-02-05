@@ -804,7 +804,7 @@ ol {
 }
 /* line 37, sass/_prev-events.sass */
 .past-speaker img,
-.past-speaker svg {
+.past-speaker object {
   display: inline-block;
   width: 49%;
 }
