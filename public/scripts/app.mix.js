@@ -11,6 +11,7 @@
       $(".fit-09").fitText(0.9);
       $(".fit-009").fitText(0.09);
       $(".fit-11").fitText(1.1);
+      $(".fit-16").fitText(1.6);
       $(".fit-23").fitText(2.3);
       return $(".fit-25").fitText(2.5);
     },

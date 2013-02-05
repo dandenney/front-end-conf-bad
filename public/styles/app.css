@@ -643,12 +643,17 @@ ol {
 /* line 55, sass/_home.sass */
 .home .mission {
   line-height: 1.3;
-  margin: 1.5em 0 1.75em 0;
-  text-align: center;
+  margin: 0 0 1.75em 0;
 }
-/* line 61, sass/_home.sass */
+/* line 60, sass/_home.sass */
 .home .counts .h3 {
   margin-top: -1em;
+}
+@media (min-width: 768px) {
+  /* line 60, sass/_home.sass */
+  .home .counts .h3 {
+    margin-top: 1em;
+  }
 }
 /* line 65, sass/_home.sass */
 .home .workshop,
