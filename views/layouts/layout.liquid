@@ -27,16 +27,16 @@
 
       <footer>
         {% include "navigation" %}
+        <a href="http://mixture.io" class="mixture">Built and hosted with Mixture.io <img src="{{ "/images/mixture.png" | asset_url }}" alt="Mixture.io" /></a>
       </footer>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-      {{ "/scripts/jquery.fittext.min.js" | asset_url | script_tag }}
-      {{ "/scripts/jquery.fitvids.min.js" | asset_url | script_tag }}
       {{ "/scripts/app.js" | asset_url | script_tag }}
+
       <script type="text/javascript">
 
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '<%= Settings.google_analytics %>']);
+        _gaq.push(['_setAccount', 'UA-3589831-5']);
         _gaq.push(['_trackPageview']);
 
         (function() {

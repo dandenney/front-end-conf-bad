@@ -1488,18 +1488,35 @@ footer a {
   color: white;
 }
 
-/* line 76, sass/app.sass */
+/* line 74, sass/app.sass */
+.mixture {
+  color: #999999;
+  display: inline-block;
+  margin-bottom: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 80, sass/app.sass */
+.mixture img {
+  display: inline-block;
+  margin: 0 0 0 0.5em;
+  position: relative;
+  top: 10px;
+  width: 32px;
+}
+
+/* line 89, sass/app.sass */
 .center-group {
   text-align: center;
 }
 
-/* line 79, sass/app.sass */
+/* line 92, sass/app.sass */
 .coming-soon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
-/* line 82, sass/app.sass */
+/* line 95, sass/app.sass */
 .temp {
   color: white;
   display: block;
@@ -1514,20 +1531,20 @@ footer a {
   width: 100%;
 }
 
-/* line 95, sass/app.sass */
+/* line 108, sass/app.sass */
 .sub-title {
   text-align: center;
   margin: -1em 0 1em 0;
 }
 
-/* line 99, sass/app.sass */
+/* line 112, sass/app.sass */
 .holy-shit-pay-attention-to-me {
   background: rgba(255, 229, 69, 0.6);
   margin-top: 1em;
   padding: 0.5em;
   text-align: center;
 }
-/* line 104, sass/app.sass */
+/* line 117, sass/app.sass */
 #hotels + .holy-shit-pay-attention-to-me {
   margin-bottom: 1em;
 }
