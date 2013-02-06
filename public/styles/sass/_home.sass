@@ -89,24 +89,25 @@
     width: 100%
   .stage-character
     +transition(all 250ms linear)
-    bottom: -2.5em
+    bottom: 9%
+    cursor: pointer
     left: 0
     position: absolute
-    width: percentage(1/14)
+    width: percentage(1/10)
     z-index: 1 // 1 is the highest number
     &:nth-child(3)
-      left: 7%
+      left: 10%
     &:nth-child(5)
-      left: 14%
+      left: 20%
     &:nth-child(7)
       left: auto
-      right: 21%
+      right: 30%
     &:nth-child(9)
       left: auto
-      right: 13%
+      right: 20%
     &:nth-child(11)
       left: auto
-      right: 7%
+      right: 10%
       &.is--active
         right: 20%
     &:nth-child(13)
@@ -115,25 +116,33 @@
       &.is--active
         right: 18%
     &.is--active
-      bottom: -3em
-      width: 40%
+      bottom: 17%
+      left: 33%
+      width: 36%
       z-index: 0 // Bringing back to base
-      &:nth-child(1)
-        left: 13%
+      &:nth-child(5)
+        left: 30%
+      &:nth-child(7),
+      &:nth-child(9),
+      &:nth-child(11),
+      &:nth-child(13)
+        left: auto
+        right: 31%
   .stage-info
     color: #fff 
     font-size: 0
-    left: 45%
+    left: 14%
     position: absolute
-    text-align: center
-    top: 30%
+    text-align: left
+    top: 8%
+    width: 65%
+    span
+      float: right
     &.is--active
       +transition(font-size 250ms linear)
       font-size: 96px
-      &:nth-child(8),
-      &:nth-child(10),
-      &:nth-child(12),
-      &:nth-child(14)
-        left: 22%
+      &:nth-child(6)
+        left: 15%
+        width: 70%
 
     

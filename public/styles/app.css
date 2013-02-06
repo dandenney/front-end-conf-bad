@@ -434,7 +434,7 @@ h2,
   h2,
   .h2 {
     font-size: 4em;
-    margin: 1em 0;
+    margin: 2em 0 0.5em 0;
   }
 }
 
@@ -697,68 +697,80 @@ ol {
   -moz-transition: all 250ms linear;
   -o-transition: all 250ms linear;
   transition: all 250ms linear;
-  bottom: -2.5em;
+  bottom: 9%;
+  cursor: pointer;
   left: 0;
   position: absolute;
-  width: 7.14286%;
+  width: 10%;
   z-index: 1;
 }
-/* line 97, sass/_home.sass */
+/* line 98, sass/_home.sass */
 .stage .stage-character:nth-child(3) {
-  left: 7%;
+  left: 10%;
 }
-/* line 99, sass/_home.sass */
+/* line 100, sass/_home.sass */
 .stage .stage-character:nth-child(5) {
-  left: 14%;
+  left: 20%;
 }
-/* line 101, sass/_home.sass */
+/* line 102, sass/_home.sass */
 .stage .stage-character:nth-child(7) {
   left: auto;
-  right: 21%;
+  right: 30%;
 }
-/* line 104, sass/_home.sass */
+/* line 105, sass/_home.sass */
 .stage .stage-character:nth-child(9) {
   left: auto;
-  right: 13%;
+  right: 20%;
 }
-/* line 107, sass/_home.sass */
+/* line 108, sass/_home.sass */
 .stage .stage-character:nth-child(11) {
   left: auto;
-  right: 7%;
+  right: 10%;
 }
-/* line 110, sass/_home.sass */
+/* line 111, sass/_home.sass */
 .stage .stage-character:nth-child(11).is--active {
   right: 20%;
 }
-/* line 112, sass/_home.sass */
+/* line 113, sass/_home.sass */
 .stage .stage-character:nth-child(13) {
   left: auto;
   right: 0;
 }
-/* line 115, sass/_home.sass */
+/* line 116, sass/_home.sass */
 .stage .stage-character:nth-child(13).is--active {
   right: 18%;
 }
-/* line 117, sass/_home.sass */
+/* line 118, sass/_home.sass */
 .stage .stage-character.is--active {
-  bottom: -3em;
-  width: 40%;
+  bottom: 17%;
+  left: 33%;
+  width: 36%;
   z-index: 0;
 }
-/* line 121, sass/_home.sass */
-.stage .stage-character.is--active:nth-child(1) {
-  left: 13%;
-}
 /* line 123, sass/_home.sass */
+.stage .stage-character.is--active:nth-child(5) {
+  left: 30%;
+}
+/* line 125, sass/_home.sass */
+.stage .stage-character.is--active:nth-child(7), .stage .stage-character.is--active:nth-child(9), .stage .stage-character.is--active:nth-child(11), .stage .stage-character.is--active:nth-child(13) {
+  left: auto;
+  right: 31%;
+}
+/* line 131, sass/_home.sass */
 .stage .stage-info {
   color: white;
   font-size: 0;
-  left: 45%;
+  left: 14%;
   position: absolute;
-  text-align: center;
-  top: 30%;
+  text-align: left;
+  top: 8%;
+  width: 65%;
 }
-/* line 130, sass/_home.sass */
+/* line 139, sass/_home.sass */
+.stage .stage-info span {
+  float: right;
+}
+/* line 141, sass/_home.sass */
 .stage .stage-info.is--active {
   -webkit-transition: font-size 250ms linear;
   -moz-transition: font-size 250ms linear;
@@ -766,9 +778,10 @@ ol {
   transition: font-size 250ms linear;
   font-size: 96px;
 }
-/* line 133, sass/_home.sass */
-.stage .stage-info.is--active:nth-child(8), .stage .stage-info.is--active:nth-child(10), .stage .stage-info.is--active:nth-child(12), .stage .stage-info.is--active:nth-child(14) {
-  left: 22%;
+/* line 144, sass/_home.sass */
+.stage .stage-info.is--active:nth-child(6) {
+  left: 15%;
+  width: 70%;
 }
 
 /* line 9, sass/_prev-events.sass */
