@@ -117,32 +117,93 @@
         right: 18%
     &.is--active
       bottom: 17%
-      left: 33%
+      left: 27%
       width: 36%
       z-index: 0 // Bringing back to base
       &:nth-child(5)
         left: 30%
-      &:nth-child(7),
-      &:nth-child(9),
+      &:nth-child(7)
+        left: auto
+        right: 32%
+      &:nth-child(9)
+        left: auto
+        right: 35%
       &:nth-child(11),
       &:nth-child(13)
         left: auto
-        right: 31%
+        right: 34%
+      +respond-to(768px)
+        left: 29%
   .stage-info
     color: #fff 
     font-size: 0
-    left: 14%
+    left: 19%
     position: absolute
     text-align: left
-    top: 8%
-    width: 65%
+    text-shadow: none
+    top: 20%
+    width: 60%
     span
       float: right
+    a
+      color: #f2bd38
+      font-size: 0
+      position: absolute
+      top: -2em
+    .stage-link
+      left: 0
+    .stage-twitter
+      right: 0
     &.is--active
       +transition(font-size 250ms linear)
-      font-size: 96px
+      font-size: 18px
+      &:nth-child(4)
+        left: 5%
+        width: 80%
       &:nth-child(6)
         left: 15%
         width: 70%
+      &:nth-child(14)
+        left: 13%
+      a
+        +transition(font-size 250ms linear)
+        font-size: 6px
+      +respond-to(768px)
+        font-size: 42px
+        left: 18%
+        top: 23%
+        width: 65%
+        &:nth-child(2)
+          left: 23%
+          width: 55%
+        &:nth-child(4)
+          left: 9%
+          width: 75%
+        &:nth-child(6)
+          left: 18% 
+          width: 63%
+        &:nth-child(8)
+          left: 18%
+          width: 54%
+        &:nth-child(10)
+          left: 23%
+          width: 54%
+        &:nth-child(14)
+          left: 15%
+          width: 54%
+        a
+          font-size: 12px
+      +respond-to(1024px)
+        font-size: 48px
+        a
+          font-size: 16px
+      +respond-to(1240px)
+        font-size: 60px
+        a
+          font-size: 18px
+      +respond-to(1400px)
+        font-size: 80px
+        a
+          font-size: 22px
 
     
