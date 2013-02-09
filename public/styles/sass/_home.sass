@@ -150,10 +150,28 @@
       font-size: 0
       position: absolute
       top: -2em
+      &:hover
+        color: scale-color(#f2bd38, $lightness: 20%)
+    .icn-before
+      -webkit-font-smoothing: antialiased
+      font-family: 'IcoMoon'
+      font-style: normal
+      font-weight: normal
+      margin-right: 0.25em
+      line-height: 1
+      position: relative
+      speak: none
+      top: 0.15em
     .stage-link
       left: 0
+      &:before
+        @extend .icn-before
+        content: "b"
     .stage-twitter
       right: 0
+      &:before
+        @extend .icn-before
+        content: "t"
     &.is--active
       +transition(font-size 250ms linear)
       font-size: 18px
@@ -206,4 +224,19 @@
         a
           font-size: 22px
 
-    
+.fake-and
+  position: relative
+.fake-and:after
+  @extend .h3
+  color: #888888
+  content: "&"
+  display: block
+  margin-top: 1.5em 
+  +respond-to(768px)
+    margin-left: 1em
+    margin-top: 0
+    position: absolute
+    right: 0
+    top: 1.25em
+  +respond-to(1024px)
+    top: 2.75em

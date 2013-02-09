@@ -4,7 +4,7 @@
   "defaultPort": 8888,
   "defaultTemplate": "index",
   "description": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
-  "hostName": "192.168.1.114",
+  "hostName": "192.168.1.135",
   "lintScripts": false,
   "optimiseImages": true,
   "project": "front-end-conf",

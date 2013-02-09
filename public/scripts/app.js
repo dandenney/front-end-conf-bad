@@ -75,7 +75,8 @@
       $(".fit-11").fitText(1.1);
       $(".fit-16").fitText(1.6);
       $(".fit-23").fitText(2.3);
-      return $(".fit-25").fitText(2.5);
+      $(".fit-25").fitText(2.5);
+      return $(".fit-4").fitText(4);
     },
     swap: function() {
       return $(".stage-character").click(function() {

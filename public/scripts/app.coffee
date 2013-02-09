@@ -96,6 +96,7 @@ window.FE = {
     $(".fit-16").fitText 1.6
     $(".fit-23").fitText 2.3
     $(".fit-25").fitText 2.5
+    $(".fit-4").fitText 4
 
   #-----------------------------------------------------------------------
   #  Character Swap

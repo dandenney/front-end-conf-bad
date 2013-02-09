@@ -1,7 +1,6 @@
 nav
   +transition(width 250ms linear)
-  background: #252525
-  box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.1)
+  background: $color-highlight
   height: 100%
   position: fixed
   right: 0
@@ -9,26 +8,43 @@ nav
   width: 0
   z-index: 2
   a
+    background: darken($color-highlight, 3%)
+    border-bottom: 1px solid darken($color-highlight, 6%)
+    color: #fff
     display: block
-    margin: 1em
+    padding: 1em
+    text-align: center
+    &:hover
+      background: #222
+      color: #fff
+    &.current
+      +opacity(0.5)
+    &.sub
+      font-size: 0.8em
+      padding-right: 2em
   &.is--active
     width: 50%
     +respond-to(768px)
-      width: 30%
-    +respond-to(1024px)
       width: 20%
+    +respond-to(1024px)
+      width: 10%
     
 .nav--trigger
-  +transition(all 270ms linear)
+  +transition(all 260ms linear)
+  height: 64px
+  padding-top: 13px
+  position: absolute
+  right: 0
+  text-align: center
+  top: -0.25em
+  width: 2em
+  z-index: 3
   &.is--active
-    background: #252525
-    border-radius: 0 0 0 50%
-    margin-top: 0
-    padding: 0.1em 0.3em 0.3em 0.6em
-    position: absolute
+    background: $color-highlight
+    position: fixed
     right: 50%
-    top: 0
+    top: -0.25em
     +respond-to(768px)
-      right: 30%
-    +respond-to(1024px)
       right: 20%
+    +respond-to(1024px)
+      right: 10%

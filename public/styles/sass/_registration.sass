@@ -47,11 +47,12 @@ h3.schedule
   .h2
     font-size: 1.5em
   .time
-    background: #f1f1f1
     display: inline-block
     line-height: 60px
     min-width: 150px
     padding: 0 1em
+    +respond-to(850px)
+      background: #f1f1f1
     +respond-to(1024px)
       min-width: 170px
   p + p
@@ -61,7 +62,7 @@ ol.schedule
   margin-bottom: 2em
   + .h4
     margin-bottom: 1em
-    
+
 // ----- Places ----- //
 
 .places
@@ -79,8 +80,23 @@ ol.schedule
         
 // ----- Day Two ----- //
 
-.day-two h4
-  margin-top: 1em
+h3.day-two
+  border-bottom: none
+  margin: -0.5em 0 0 0
+  text-align: center
+
+.day-two 
+  h4
+    margin-top: 1em
+    padding-left: 1em
+  i
+    color: #e9e9e9
+    margin-left: -1em
+  p
+    padding-left: 3em
+  .h5
+    margin-top: 2em
+    padding-left: 0
 
 
       
