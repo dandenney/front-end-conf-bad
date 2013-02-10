@@ -1449,175 +1449,191 @@ nav.is--active {
   }
 }
 @media (min-width: 1024px) {
-  /* line 27, sass/_registration.sass */
+  /* line 20, sass/_registration.sass */
+  .workshop-character {
+    width: 156px;
+  }
+  /* line 28, sass/_registration.sass */
   .workshop-character + .workshop-character {
     margin-left: 1em;
   }
 }
 
-/* line 31, sass/_registration.sass */
+/* line 32, sass/_registration.sass */
 .meet-ups i {
   display: block;
-  font-size: 9em;
+  font-size: 87px;
   line-height: 1;
   text-align: center;
 }
+@media (min-width: 768px) {
+  /* line 32, sass/_registration.sass */
+  .meet-ups i {
+    font-size: 127px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 32, sass/_registration.sass */
+  .meet-ups i {
+    font-size: 143px;
+  }
+}
 
-/* line 39, sass/_registration.sass */
+/* line 44, sass/_registration.sass */
 h3.schedule,
 h3.locations,
 h3.speakers {
   margin: 1em 0 0.5em 0;
 }
 
-/* line 45, sass/_registration.sass */
+/* line 50, sass/_registration.sass */
 .schedule > li {
   background: #f9f9f9;
   margin: 0.5em 0;
 }
-/* line 49, sass/_registration.sass */
+/* line 54, sass/_registration.sass */
 .schedule p,
 .schedule img {
   float: left;
   margin: 0;
   vertical-align: middle;
 }
-/* line 54, sass/_registration.sass */
+/* line 59, sass/_registration.sass */
 .schedule p {
   padding: 0 0 0.5em 0.5em;
 }
 @media (min-width: 768px) {
-  /* line 54, sass/_registration.sass */
+  /* line 59, sass/_registration.sass */
   .schedule p {
     padding: 0 0 0 0.5em;
   }
-  /* line 58, sass/_registration.sass */
+  /* line 63, sass/_registration.sass */
   .schedule p:last-child {
     width: 45%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 61, sass/_registration.sass */
+  /* line 66, sass/_registration.sass */
   .schedule p:last-child {
     width: 57%;
   }
 }
-/* line 63, sass/_registration.sass */
+/* line 68, sass/_registration.sass */
 .schedule p + p {
   padding: 0;
 }
-/* line 65, sass/_registration.sass */
+/* line 70, sass/_registration.sass */
 .schedule img {
   height: 51px;
 }
-/* line 67, sass/_registration.sass */
+/* line 72, sass/_registration.sass */
 .schedule .h2 {
   font-size: 1.5em;
 }
-/* line 69, sass/_registration.sass */
+/* line 74, sass/_registration.sass */
 .schedule .h4 {
   font-size: 1.2em;
   line-height: 51px;
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  /* line 69, sass/_registration.sass */
+  /* line 74, sass/_registration.sass */
   .schedule .h4 {
     margin-left: 0.25em;
   }
 }
-/* line 75, sass/_registration.sass */
+/* line 80, sass/_registration.sass */
 .schedule .h5 {
   display: block;
 }
-/* line 77, sass/_registration.sass */
+/* line 82, sass/_registration.sass */
 .schedule .time {
   height: 51px;
   line-height: 51px;
   min-width: 150px;
 }
 @media (min-width: 850px) {
-  /* line 77, sass/_registration.sass */
+  /* line 82, sass/_registration.sass */
   .schedule .time {
     background: #f1f1f1;
   }
 }
 @media (min-width: 1024px) {
-  /* line 77, sass/_registration.sass */
+  /* line 82, sass/_registration.sass */
   .schedule .time {
     min-width: 170px;
   }
 }
 
-/* line 86, sass/_registration.sass */
+/* line 91, sass/_registration.sass */
 ol.schedule {
   margin-bottom: 2em;
 }
-/* line 88, sass/_registration.sass */
+/* line 93, sass/_registration.sass */
 ol.schedule + .h4 {
   margin-bottom: 1em;
 }
 
-/* line 94, sass/_registration.sass */
+/* line 99, sass/_registration.sass */
 .locations ul {
   margin-bottom: 3em;
 }
 
-/* line 101, sass/_registration.sass */
+/* line 106, sass/_registration.sass */
 .places h4 {
   margin-top: 3em;
 }
-/* line 103, sass/_registration.sass */
+/* line 108, sass/_registration.sass */
 .places a {
   display: block;
 }
-/* line 105, sass/_registration.sass */
+/* line 110, sass/_registration.sass */
 .places li {
   display: inline-block;
   margin: 1em 0 1em;
   vertical-align: top;
 }
 @media (min-width: 768px) {
-  /* line 105, sass/_registration.sass */
+  /* line 110, sass/_registration.sass */
   .places li {
     width: 30%;
   }
-  /* line 111, sass/_registration.sass */
+  /* line 116, sass/_registration.sass */
   .places li:nth-child(3n+2), .places li:nth-child(3n+3) {
     margin-left: 4%;
   }
 }
 
-/* line 117, sass/_registration.sass */
+/* line 122, sass/_registration.sass */
 h3.day-two {
   border-bottom: none;
   margin: -0.5em 0 0 0;
   text-align: center;
 }
 
-/* line 123, sass/_registration.sass */
+/* line 128, sass/_registration.sass */
 .day-two h4 {
   margin-top: 1em;
   padding-left: 1em;
 }
-/* line 126, sass/_registration.sass */
+/* line 131, sass/_registration.sass */
 .day-two i {
   color: #e9e9e9;
   margin-left: -1em;
 }
 @media (min-width: 768px) {
-  /* line 130, sass/_registration.sass */
+  /* line 135, sass/_registration.sass */
   .day-two p {
     padding-left: 1.75em;
   }
 }
 @media (min-width: 1024px) {
-  /* line 133, sass/_registration.sass */
+  /* line 138, sass/_registration.sass */
   .day-two p {
     padding-left: 3em;
   }
 }
-/* line 135, sass/_registration.sass */
+/* line 140, sass/_registration.sass */
 .day-two .h5 {
   margin-top: 2em;
   padding-left: 0;
