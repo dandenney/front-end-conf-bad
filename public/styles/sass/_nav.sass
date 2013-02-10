@@ -1,34 +1,45 @@
 nav
-  +transition(width 250ms linear)
-  background: $color-highlight
-  height: 100%
+  +transition(left 250ms linear)
+  background: $color-feature
   position: fixed
-  right: 0
+  height: 100%
+  left: 100%
+  padding-top: 4em
   top: 0
-  width: 0
   z-index: 2
+  width: 40%
+  +respond-to(768px)
+    width: 20%
+  +respond-to(1024px)
+    width: 15%
   a
-    background: darken($color-highlight, 3%)
-    border-bottom: 1px solid darken($color-highlight, 6%)
-    color: #fff
+    +transition(opacity 750ms linear)
+    border-bottom: 1px solid #f1f1f1
+    color: $color-highlight
     display: block
-    padding: 1em
+    padding: 0.75em 1em
     text-align: center
+    +  a
+      border-top: 1px solid #fff
     &:hover
-      background: #222
+      background: $color-highlight
       color: #fff
+      &.current
+        background: none
+        color: $color-highlight
+        cursor: normal
     &.current
-      +opacity(0.5)
+      +opacity(0.3)
+      cursor: normal
     &.sub
       font-size: 0.8em
       padding-right: 2em
   &.is--active
-    width: 50%
+    left: 60%
     +respond-to(768px)
-      width: 20%
+      left: 80%
     +respond-to(1024px)
-      width: 10%
-    
+      left: 85%
 .nav--trigger
   +transition(all 260ms linear)
   height: 64px
@@ -40,11 +51,10 @@ nav
   width: 2em
   z-index: 3
   &.is--active
-    background: $color-highlight
     position: fixed
-    right: 50%
+    right: 40%
     top: -0.25em
     +respond-to(768px)
       right: 20%
     +respond-to(1024px)
-      right: 10%
+      right: 15%

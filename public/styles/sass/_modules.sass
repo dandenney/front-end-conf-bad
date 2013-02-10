@@ -103,6 +103,17 @@
       &:last-child
         margin-top: 0
         padding-left: 3em
+        
+.wrapper--two-thirds-third
+  +respond-to(768px)
+    .block-to-one-third
+      padding-left: 2em
+  +respond-to(1024px)
+    .block-to-one-third
+      padding-left: 3em
+  +respond-to(1200px)
+    .block-to-one-third
+      padding-left: 4em
   
 .space-top
   margin-top: 1em
