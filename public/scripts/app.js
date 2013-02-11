@@ -86,7 +86,7 @@
       });
     },
     navToggle: function() {
-      return $(".nav--trigger").click(function() {
+      return $(".nav--trigger, nav a").click(function() {
         return $(".nav--toggle").toggleClass("is--active");
       });
     }

@@ -1,4 +1,5 @@
 /* [sass, public/styles, app.css] */
+/* [sass, public/styles, app.css] */
 @font-face {
   font-family: "ChunkFiveFF";
   src: url('/public/styles/fonts/Chunkfive-webfont.eot');
@@ -485,7 +486,7 @@ h4,
   /* line 70, sass/_base.sass */
   h4,
   .h4 {
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 }
 /* line 80, sass/_base.sass */

@@ -113,7 +113,7 @@ window.FE = {
   #-----------------------------------------------------------------------
 
   navToggle: ->
-    $(".nav--trigger").click ->
+    $(".nav--trigger, nav a").click ->
       $(".nav--toggle").toggleClass "is--active"
 
 }
